@@ -1,1 +1,3 @@
-console.log("HIIIIII");
+function name(params) {
+    
+}
