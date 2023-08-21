@@ -16,7 +16,7 @@
                 <h3 class="text-xl font-bold">---SALE FEVER---</h3>
                 <h1 class="text-5xl m-8 font-bold">Purchase TK 200 or<br>above & get<span class="text-fuchsia-500"> 20% off</span></h1>
                 <p class="inline font-medium mr-2">Use Promo Code</p>
-                <button class="btn btn-active btn-secondary">SALE200</button>
+                <button class="btn btn-active btn-secondary">SELL200</button>
             </div>
             <div class="w-1/3">
                 <img src="./images/Summer-1.png" alt="">
@@ -130,10 +130,11 @@
                         <p class="font-semibold">Total: <span id="new-price" class="text-[#1111117F]">0</span> Tk</p>
                     </div>
                     <hr>
-                    <button id="make-purchase-btn" onclick="sale_modal.showModal()" class="btn btn-wide bg-[#E527B2] hover:bg-fuchsia-600 mt-6 text-white" disabled>Make Purchase</button>
+                    <button id="make-purchase-btn" onclick="purchase_modal.showModal()" class="btn btn-wide bg-[#E527B2] hover:bg-fuchsia-600 mt-6 text-white" disabled>Make Purchase</button>
                 </div>
+                <!-- modal -->
                 <div class="flex justify-center items-center">
-                    <dialog id="sale_modal" class="modal w-[80%] mx-auto">
+                    <dialog id="purchase_modal" class="modal w-[80%] mx-auto">
                         <form method="dialog" class="modal-box">
                             <div class="text-center w-full mx-auto">
                                 <img class="mx-auto w-[80px] lg:w-[auto]" src="./images/congo.png" alt="congratulations">
@@ -141,7 +142,7 @@
                                 <p class="text-[#1111117F] text-base">Your Purchase the product</p>
                             </div>
                             <div class="modal-action justify-center items-center">
-                                <button onclick="goHome()" class="text-white bg-[#E527B2] py-2 px-5 rounded-xl text-xl">Go Home</button>
+                                <button class="text-white bg-[#E527B2] py-2 px-5 rounded-xl text-xl"><a href="./index.html">Go Home</a></button>
                             </div>
                         </form>
                     </dialog>

@@ -26,7 +26,7 @@ function handleClick(target) {
 }
 
 document.getElementById("apply-btn").addEventListener("click", function () {
-    if (document.getElementById("couponField").value !== "SALE200") {
+    if (document.getElementById("couponField").value !== "SELL200") {
         alert("Please enter a valid coupon code");
         return;
     }
