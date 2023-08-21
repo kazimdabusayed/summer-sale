@@ -10,12 +10,11 @@
 </head>
 
 <body>
-    <header class="bg-amber-100">
-        <div class="hero flex justify-evenly h-screen">
+    <header class="bg-amber-100 h-[85vh]">
+        <div class="hero flex justify-evenly">
             <div class="text-center">
                 <h3 class="text-xl font-bold">---SALE FEVER---</h3>
-                <h1 class="text-5xl m-8 font-bold">Purchase TK 200 or<br>above & get<span class="text-fuchsia-500"> 20%
-                        off</span></h1>
+                <h1 class="text-5xl m-8 font-bold">Purchase TK 200 or<br>above & get<span class="text-fuchsia-500"> 20% off</span></h1>
                 <p class="inline font-medium mr-2">Use Promo Code</p>
                 <button class="btn btn-active btn-secondary">SALE200</button>
             </div>
@@ -26,13 +25,13 @@
     </header>
     <main>
         <section class="min-h-screen">
-            <div class="grid grid-cols-4 gap- m-20">
-                <div class="col-span-3 ">
+            <div class="grid grid-cols-4 mt-20 ml-20 mr-20">
+                <div class="col-span-3">
                     <div class="">
                         <h1 class="text-3xl font-semibold mb-8">Kitchenware</h1>
                         <div class="w-4/5 flex justify-between">
                             <div class="text-center">
-                                <img src="./images/prod1.png" alt="">
+                                <img onclick="handleClick(this)" src="./images/prod1.png" alt="">
                                 <div class="rating mt-2">
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -41,10 +40,10 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                                 <h5 class="font-bold text-lg">K. Accessories</h5>
-                                <p><span>39.00</span> TK</p>
+                                <p>39.00 TK</p>
                             </div>
                             <div class="text-center">
-                                <img src="./images/prod2.png" alt="">
+                                <img onclick="handleClick(this)" src="./images/prod2.png" alt="">
                                 <div class="rating">
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -53,10 +52,10 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                                 <h5 class="font-bold text-lg">K. Accessories</h5>
-                                <p><span id="">39.00</span> TK</p>
+                                <p><span id="">25.00</span> TK</p>
                             </div>
                             <div class="text-center">
-                                <img src="./images/prod3.png" alt="">
+                                <img onclick="handleClick(this)" src="./images/prod3.png" alt="">
                                 <div class="rating mt-2">
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
@@ -66,7 +65,7 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                                 <h5 class="font-bold text-lg">Home Cooker</h5>
-                                <p><span id="">39.00</span> TK</p>
+                                <p><span id="">49.00</span> TK</p>
                             </div>
                         </div>
                     </div>
@@ -74,7 +73,7 @@
                         <h1 class="text-3xl font-semibold mb-4">Furniture</h1>
                         <div class="w-4/5 flex justify-between">
                             <div class="text-center">
-                                <img src="./images/prod7.png" alt="">
+                                <img onclick="handleClick(this)" src="./images/prod7.png" alt="">
                                 <div class="rating">
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -86,7 +85,7 @@
                                 <p><span>185.00</span> TK</p>
                             </div>
                             <div class="text-center">
-                                <img src="./images/prod8.png" alt="">
+                                <img onclick="handleClick(this)" src="./images/prod8.png" alt="">
                                 <div class="rating mt-2">
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
@@ -98,7 +97,7 @@
                                 <p><span id="">299.00</span> TK</p>
                             </div>
                             <div class="text-center">
-                                <img src="./images/prod9.png" alt="">
+                                <img onclick="handleClick(this)" src="./images/prod9.png" alt="">
                                 <div class="rating mt-2">
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
@@ -113,14 +112,25 @@
                         </div>
                     </div>
                 </div>
-                <div class=" mt-10 px-3">
-                    <h5 class="text-black text-base font-bold">Have coupon?</h5>
-                    <div class="flex rounded-md border-2 border-gray-300 border-solid my-4">
-                        <input type="text" id="" placeholder="Coupon code"
-                            class="px-3 w-full rounded-l-md text-sm focus:outline-none">
-                        <button type="button"
-                            class="py-3 px-4 inline-flex flex-shrink-0 justify-center items-center rounded-r-md border border-transparent font-semibold bg-fuchsia-500 text-white hover:bg-fuchsia-600 focus:z-10 focus:outline-none focus:ring-1">Apply</button>
+                <div class="mt-10 px-3">
+                    <div>
+                        <h5 class="text-black text-base font-bold">Have coupon?</h5>
+                        <div class="flex my-4">
+                            <input type="text" id="couponField" placeholder="Coupon code" class="py-2 px-3 outline-none border border-gray-[#11111126] rounded-l-lg">
+                            <button type="button" id="apply-btn" class="text-white bg-[#E527B2] py-2 px-3 rounded-r-lg disabled:opacity-50 hover:bg-fuchsia-600" disabled>Apply</button>
+                        </div>
                     </div>
+                    <div class="my-6 text-xl" id="selected-item">
+                        <!-- list will be added here-->
+                    </div>
+                    <hr>
+                    <div class="my-4">
+                        <p class="font-semibold">Total Price: <span id="total-price" class="text-[#1111117F]">0</span> Tk</p>
+                        <p class="font-semibold my-1">Discount: <span id="discount" class="text-[#1111117F]">0</span> Tk</p>
+                        <p class="font-semibold">Total: <span id="new-price" class="text-[#1111117F]">0</span> Tk</p>
+                    </div>
+                    <hr>
+                    <button id="make-purchase-btn" class="btn btn-wide bg-[#E527B2] mt-6 text-white" disabled>Make Purchase</button>
                 </div>
             </div>
             </div>
