@@ -1,4 +1,3 @@
-let total = 0;
 let totalPrice = 0;
 let newPrice = 0;
 
@@ -13,7 +12,8 @@ function handleClick(target) {
     //
     const price = target.parentNode.childNodes[7].innerText.split(" ")[0];
     totalPrice = parseFloat(totalPrice) + parseFloat(price);
-    document.getElementById("total-price").innerText = totalPrice;
+    document.getElementById("total-price").innerText = totalPrice.toFixed(2);
+    const total = document.getElementById("new-price").innerText = totalPrice.toFixed(2);
     //
     if (totalPrice > 200) {
         document.getElementById("apply-btn").disabled = false;
@@ -25,9 +25,8 @@ function handleClick(target) {
     }
 }
 
-
-document.getElementById("apply-coupon").addEventListener("click", function () {
-    if (document.getElementById("couponField").value.trim() !== "SALE200") {
+document.getElementById("apply-btn").addEventListener("click", function () {
+    if (document.getElementById("couponField").value !== "SALE200") {
         alert("Please enter a valid coupon code");
         return;
     }
